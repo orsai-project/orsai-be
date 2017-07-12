@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+    db:
+        image: postgres:9.6-alpine
+        ports:
+            - 5432:5432
+        environment:
+            POSTGRES_USER: orsai_db_user
+            POSTGRES_PASSWORD: orsai_db_password
+            POSTGRES_DB: orsai_db
+
+    adminer:
+        image: adminer
+        ports:
+            - 8080:8080

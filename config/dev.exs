@@ -35,8 +35,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :orsai, Orsai.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "montenegro",
-  database: "orsai_dev",
-  hostname: "localhost",
+  username: "orsai_db_user",
+  password: "orsai_db_password",
+  database: "orsai_db",
+  hostname: "192.168.99.100", # localhost
   pool_size: 10
